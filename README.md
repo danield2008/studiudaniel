@@ -1,74 +1,94 @@
-# Studiu Daniel - Estudio de Grabación
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Studiu Daniel</title>
+  <meta name="description" content="StudioName — Estudio de grabación y producción." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css_styles_Version4.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="#">Studiu Daniel</a>
+      <button id="menu-btn" class="menu-btn" aria-label="Abrir menú">☰</button>
+      <nav id="nav" class="nav" aria-label="Navegación principal">
+        <a href="#services">Servicios</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact" class="btn">Reservar</a>
+      </nav>
+    </div>
+  </header>
 
-Sitio web profesional para un estudio de grabación y producción audiovisual dirigido por Daniel.
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-left">
+          <h1>Studiu Daniel</h1>
+          <p class="lead"> Bună ziua,</p>
+          <p>Mă numesc Daniel, sunt un tânăr de 17 ani, iar pasiunile mele sunt muzica, fotografia și videografia. Întrucât îmi dezvolt aceste abilități, doresc să le folosesc și să le perfecționez pentru slava și lauda lui Dumnezeu.
 
-## 📋 Descripción
+Vă mulțumesc pentru sprijinul</p>
+          <div class="actions">
+            <a href="#contact" class="btn">Reservar sesión</a>
+            <button id="play" class="btn ghost">▶ Escuchar demo</button>
+          </div>
+        </div>
+        <div class="stats">
+          <div><strong>50</strong><span>Negative</span></div>
+          <div><strong>2</strong><span>salas</span></div>
+          <div><strong>40+</strong><span>proyectos</span></div>
+        </div>
+      </div>
+    </section>
 
-Página web moderna y responsiva que presenta los servicios de grabación, edición y producción. Incluye secciones de servicios, portfolio, estadísticas y contacto con interactividad mínima.
+    <section id="services" class="section">
+      <div class="wrap">
+        <h2>Servicios</h2>
+        <div class="grid">
+          <div class="card">Grabación vocal e instrumentos</div>
+          <div class="card">Mezcla y master profesional</div>
+          <div class="card">Producción y arreglo musical</div>
+        </div>
+      </div>
+    </section>
 
-## 🎯 Características
+    <section id="portfolio" class="section alt">
+      <div class="wrap">
+        <h2>Portfolio</h2>
+        <div class="grid-2">
+          <div class="work">Proyecto A — Audio</div>
+          <div class="work">Proyecto B — Audio</div>
+        </div>
+      </div>
+    </section>
 
-- **Diseño responsivo** - Optimizado para móviles, tablets y desktops
-- **Menú móvil** - Toggle de navegación para dispositivos pequeños
-- **Reproductor de audio** - Demo de audio integrado con controles play/pause
-- **Gradientes y efectos** - Fondo parallax fijo con tema oscuro
-- **Variables CSS** - Colores y estilos centralizados para mantenimiento fácil
+    <section id="contact" class="section contact">
+      <div class="wrap">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+          <input name="name" type="text" placeholder="Nombre" required>
+          <input name="email" type="email" placeholder="Email" required>
+          <textarea name="message" rows="4" placeholder="Mensaje / Fecha preferida" required></textarea>
+          <button class="btn" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-## 📁 Estructura de Archivos
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> Studiu Daniel — Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-```
-studiudaniel/
-├── index_Version3.html        # Estructura HTML principal
-├── css_styles_Version4.css    # Estilos y diseño responsivo
-├── js_main_Version3.js        # Interactividad (menú, audio, año actual)
-└── README.md                   # Este archivo
-```
+  <!-- Audio: coloca tu demo en assets/demo.mp3 -->
+  <audio id="demo-audio" src="demo.mp3" preload="none"></audio>
 
-## 🚀 Uso
-
-### Requisitos
-- Navegador moderno (Chrome, Firefox, Safari, Edge)
-- Conexión a internet (para fuentes de Google Fonts)
-- Archivo `bg.jpg` para el fondo (ubicar en la raíz)
-- Archivo de audio demo en `assets/demo.mp3`
-
-### Instalación
-1. Clona o descarga el repositorio
-2. Abre `index_Version3.html` en tu navegador
-3. Asegúrate de que `bg.jpg` y los archivos de audio estén en la ubicación correcta
-
-## 🔧 Tecnologías
-
-- **HTML5** - Estructura semántica
-- **CSS3** - Gradientes, flexbox, media queries
-- **JavaScript Vanilla** - Sin dependencias externas
-- **Google Fonts** - Tipografía Inter
-
-## 📱 Secciones
-
-1. **Header** - Logo y menú de navegación
-2. **Hero** - Presentación con biografía y CTA
-3. **Servicios** - Tarjetas de servicios ofrecidos
-4. **Portfolio** - Galería de proyectos
-5. **Contacto** - Formulario y datos
-
-## 🎨 Personalización
-
-### Variables CSS principales
-- `--accent`: Color principal (#6ee7b7)
-- `--bg-gradient`: Gradiente de fondo
-- `--card`: Color de tarjetas
-- `--text`: Color del texto
-- `--radius`: Radio de bordes
-
-Edita estas variables en `css_styles_Version4.css` para cambiar el tema.
-
-## 📝 Notas
-
-- El JavaScript es minimalista: solo maneja menú móvil, audio y año dinámico
-- El fondo usa `background-attachment: fixed` para efecto parallax (con fallback para iOS)
-- Los idiomas usados son español, inglés y rumano
-
+  <script src="js/main.js"></script>
+</body>
+</html>
 ---
 
 **Autor:** Daniel 
